@@ -1364,6 +1364,8 @@ footer {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 14px;
+  color: #fff;
 }
 .wrapper {
   background: #34393D;

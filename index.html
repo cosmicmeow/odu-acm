@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Code for America Brigade</title>
+    <title>ACM | Old Dominion University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ACM - Old Dominion University Chapter">
     <meta name="author" content="cosmic_meow">
@@ -11,6 +11,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.pageslide.css">
     <link href="css/font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="scripts/wufoo.js"></script>
 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -49,7 +51,7 @@
           <li><a href="https://bit.ly/odu-acm">ACM Google Group</a></li>
           <li><a href="http://codeforhamptonroads.org">C4HRVA</a></li>
           <li><a href="https://www.facebook.com/groups/347108605336487/">CS Facebook</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
 
@@ -130,7 +132,9 @@
           
           <div class="col-lg-10">
           <p>
-            ACM is the world’s largest educational and scientific computing society uniting the world's computing educators, researchers and professionals to inspire dialogue, share resources and address the field's challenges. ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM supports the professional growth of its members by providing opportunities for life-long learning, career development, and professional networking.
+            <ul>
+              <li>Adopt-A-Spot @ ODU - A collaboration with Code for America Brigade, the app is adopted from <a href="http://adopahydrant.org">Adopt-A-Hydrant</a> program in Boston.</li>
+            </ul>
           </p>
         </div>
 
@@ -141,11 +145,69 @@
       </div>
     </div> <!-- /.wrapper -->
 
+    <!-- contact form -->
+    <a id="contact"></a>
+    <div class="wrapper" style="background-color:#D9E3D8">
+      <div class="mainpage">
+        <div class="row featurette">
+          <h1>Contact Us:</h1>
+          
+          <div class="col-lg-15">
+          <p>
+            <!-- START THE FORM -->
+            <center>
+            <form role="form" id="form1" name="form1" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://cosmicmeow.wufoo.com/forms/z7x4m1/#public">
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First Name" id="Field1" name="Field1" type="text" class="field text fn">
+              </div>
+
+               <div class="form-group">
+                <input type="text" class="form-control" placeholder="Last Name" id="Field2" name="Field2" type="text" class="field text ln">
+              </div>
+
+
+              <div class="form-group">
+                <input type="email" id="Field3" name="Field3" class="form-control" name="email" placeholder="Email">
+              </div>
+
+              <div class="form-group">
+                <textarea id="Field4" name="Field4" rows="6" placeholder="Message" name="message" class="form-control"></textarea>
+              </div>
+
+              <br><br>
+
+              <input id="saveForm" name="saveForm" type="submit" value="Submit">
+              <input type="hidden" id="idstamp" name="idstamp" value="Oj3ys5JWeM9PBfhU9hhz48EHo1DYmcCkGffZJm7gUmA=" />
+              
+              </form>
+
+              </center>
+
+          </p>
+        </div>
+
+
+      </div>
+    </div> <!-- /.wrapper -->
+
+    <script language="JavaScript">
+      // Code for validating the form
+      // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+      // for details
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name"); 
+      frmvalidator.addValidation("email","req","Please provide your email"); 
+      frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+    </script>   
+
     
     
       <!-- FOOTER -->
       <footer>
         <div class="container">
+          <p class="pull-left">Website and UI images created by <a href="https://twitter.com/cosmic_meow">Lookmai Rattana</a>.
+          <br>Based on Twitter Bootstrap 3.0. </p>
           <p class="pull-right"><a href="#"><img src="img/arrow-01.png"></a></p>
         </div>
       </footer>
