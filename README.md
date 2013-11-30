@@ -4,6 +4,18 @@ odu-acm
 odu acm website 
 
 
+Spring speakers
+----------
+Bret Fisher
+Ryan Castillo 
+
+Topics
+-----
+Google
+CyberSecurity
+
+
+
 Fall Speakers
 
 
